@@ -1,0 +1,29 @@
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_event = 'InsertEnter'
+hook_add = '''
+  source ~/.config/nvim/plugins/deoplete.vim
+'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  source ~/.config/nvim/plugins/nerdtree.vim
+'''
+
+[[plugins]]
+repo   = 'Shougo/unite.vim'
+
+# unite.vim を読み込んだら一緒に読み込む
+[[plugins]]
+repo      = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
+
+[[plugins]]
+repo = "davidhalter/jedi-vim"
+on_ft = 'python'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+on_ft = 'python'
+

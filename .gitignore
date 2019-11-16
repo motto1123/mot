@@ -1,0 +1,18 @@
+# file
+*.swp
+*.swo
+
+# zsh
+.zcompdump
+.zcompdump*
+.zsh_history
+
+# python
+.pylint.d
+.python_history
+
+.cache
+notebook
+
+# key
+.ssh

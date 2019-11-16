@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/private/var/folders/x8/9l0ycwns5yn20l9kyrv_tj300000gn/T/a5709472-5f34-42c1-b26d-db8a3b69c626/home/vagrant/centos65/ruby_lessons'
+let g:netrw_dirhist_2='/Users/motokidaisuke/suutikeisan'
+let g:netrw_dirhist_3='/Users/motokidaisuke/.vim/bundle/neobundle.vim'
