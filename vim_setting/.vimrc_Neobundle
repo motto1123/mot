@@ -1,0 +1,191 @@
+
+"=========================
+" Neobundle設定
+"=========================
+
+" bundleで管理するディレクトリを指定
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" neobundle自体をneobundleで管理
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+"-------------------------
+" 各種プラグイン
+"-------------------------
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\     'windows' : 'tools\\update-dll-mingw',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make',
+\     'linux' : 'make',
+\     'unix' : 'gmake',
+\    },
+\ }
+NeoBundle 'thinca/vim-quickrun'
+let g:quickrun_config={'*': {'split': ''}}
+let g:quickrun_config._={ 'runner':'vimproc',
+\       "runner/vimproc/updatetime" : 10,
+\       "outputter/buffer/close_on_empty" : 1,
+\ }
+
+" :QuickRun make
+" で make する
+" outputter や runner はお好みで
+let g:quickrun_config = {
+\   "make" : {
+\       "command"   : "make",
+\       "exec" : "%c %o",
+\       "outputter" : "error:buffer:quickfix",
+\       "runner" : "vimproc",
+\   },
+\}
+
+
+"vimで日本語ヘルプをつかう
+NeoBundle 'vim-jp/vimdoc-ja'
+" vimdoc-ja　普段はコメントアウト
+helptags ~/.vim/bundle/vimdoc-ja/doc
+
+"Migemo 日本語ローマ字検索
+NeoBundle 'haya14busa/vim-migemo'
+
+"'"かっこの編集'"
+NeoBundle 'surround.vim'
+
+"ds' 文を囲んでいる ' を消す
+"di'  ' で囲まれた部分を消す
+"cs'  ' を " に変更
+"ci'    で囲まれた部分を消して, インサートモードに入る
+"S'     ビジュアルモードで選択した部分を ' で囲む
+"yss'   文を ' で囲む
+"ysiw'  "カーソルがある単語を ' で囲む
+"ドットで同じ操作ができる.
+"
+"ds ･･･ d(delete)s(surround) di ･･･ d(delete)i(inside) cs ･･･ c(change)s(surround) ci ･･･ c(change)i(inside) yss ･･･y(yank)s(surround)s(sentence) ysiw ･･･ y(yank)s(surrond)iw(inner word)
+
+
+"matchit 対となるキーワード間の移動
+set nocompatible
+filetype plugin on
+runtime macros/matchit.vim
+
+"
+" colorscheme
+"
+
+"NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'vim-scripts/twilight'
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'jpo/vim-railscasts-theme'
+
+
+" エクスプローラー的なNERDTree
+NeoBundle 'scrooloose/nerdtree'
+" 入力保管
+NeoBundle 'Townk/vim-autoclose'
+" マークアップ用入力補完
+NeoBundle 'mattn/emmet-vim'
+" ソースコード実行
+
+
+NeoBundle 'thinca/vim-quickrun'
+" grep
+NeoBundle 'grep.vim'
+" 自動的にquickfix-windowを開く
+autocmd QuickFixCmdPost *grep* cwindow
+
+
+
+NeoBundle 'nathanaelkane/vim-indent-guides'
+" vim立ち上げたときに、自動的にvim-indent-guidesをオンにする
+let g:indent_guides_enable_on_vim_startup=1
+" ガイドをスタートするインデントの量
+let g:indent_guides_start_level=1
+" 自動カラーを無効にする
+let g:indent_guides_auto_colors=0
+" 奇数インデントのカラー
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=lightmagenta
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=black
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=lighblack   ctermbg=3
+" 偶数インデントのカラー
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=lightblue
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgray ctermbg=4
+" ハイライト色の変化の幅
+let g:indent_guides_color_change_percent = 30
+" ガイドの幅
+let g:indent_guides_guide_size = 1
+
+" git 関連だったような
+NeoBundle 'tpope/vim-fugitive'
+
+"Required:
+"filetype plugin indent on
+"
+
+" テキストファイルを整形する
+NeoBundle 'junegunn/vim-easy-align'
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+"
+" Python 文法チェック関連
+"
+
+NeoBundle 'scrooloose/syntastic'
+"let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+"let g:syntastic_python_checkers = ['pyflakes']
+"let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = ['flake8', 'autopep8']
+autocmd FileType python set equalprg=autopep8\ -
+
+" original http://stackoverflow.com/questions/12374200/using-uncrustify-with-vim/15513829#15513829
+function! Preserve(command)
+    " Save the last search.
+    let search = @/
+    " Save the current cursor position.
+    let cursor_position = getpos('.')
+    " Save the current window position.
+    normal! H
+    let window_position = getpos('.')
+    call setpos('.', cursor_position)
+    " Execute the command.
+    execute a:command
+    " Restore the last search.
+    let @/ = search
+    " Restore the previous window position.
+    call setpos('.', window_position)
+    normal! zt
+    " Restore the previous cursor position.
+    call setpos('.', cursor_position)
+endfunction
+
+function! Autopep8()
+    call Preserve(':silent %!autopep8 -')
+endfunction
+
+" Shift + F で自動修正
+autocmd FileType python nnoremap <S-P> :call Autopep8()<CR>
+"
+" git 差分表示
+"
+NeoBundle 'airblade/vim-gitgutter'
+
+
+"=========================
+" bundle install end 
+"=========================
+call neobundle#end()
+
+""
+" Required:
+filetype plugin indent on
+
+" 未インストールのプラグインがある場合、インストールするかを確認する
+NeoBundleCheck

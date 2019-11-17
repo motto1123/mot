@@ -1,0 +1,125 @@
+" .vimrc のメイン設定
+
+"######################################################################
+" 表示設定
+"######################################################################
+
+" コードの色分け
+syntax on 
+
+"行番号設定
+set number
+
+"検索のハイライト表示"
+set hlsearch 
+
+" カーソル形状
+let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+
+" タブをスペース4つに
+set noautoindent
+set smartindent
+set smarttab
+set tabstop=4
+set expandtab
+set shiftwidth=4
+
+" ymlの時は2つ分
+set shiftwidth=2
+set tabstop=2
+
+" 全角スペースをハイライトする設定
+augroup highlightIdegraphicSpace
+  autocmd!
+  autocmd Colorscheme * highlight IdeographicSpace term=underline ctermbg=DarkGreen guibg=DarkGreen
+  autocmd VimEnter,WinEnter * match IdeographicSpace /　/
+augroup END
+
+" カラースキーム（vim の文字の色合い設定）
+colorscheme peachpuff
+"highlight Normal guibg=black guifg=white
+" set background=lucius
+
+"######################################################################
+" NERDTree 関連
+"######################################################################
+
+"ctrl+yでNERDTreeを開く
+nnoremap <silent><C-y> :NERDTreeToggle<CR>
+
+"引数なしでvimを開いたらNERDTreeを起動、引数ありならNERDTreeは起動しないように
+let file_name = expand("%")
+if has('vim_starting') &&  file_name == ""
+    autocmd VimEnter * NERDTree ./
+endif
+
+" インサートモードの際に縦棒になる
+if has('vim_starting')
+  let &t_SI .= "\e[6 q"
+  let &t_EI .= "\e[2 q"
+  let &t_SR .= "\e[4 q"
+endif
+" ブックマークを最初から表示 （いらない？ よくわからん）
+" let g:NERDTreeShowBookmarks=1
+
+
+"###################################################################### 
+" 補完・履歴・コピー
+"######################################################################
+
+" argdo などファイル一括変換で「保存していない」から処理が止まる問題を解消
+"
+set hidden
+
+" コマンドラインモードでTABキーによるファイル名補完を有効にする
+set wildmenu wildmode=list:longest,full
+
+" コマンドラインの履歴を10000件保存する
+set history=10000
+
+" GUI版vimエディタで、この機能を有効にするなら、この設定を追加する。
+" :set guioptions+=a
+" GUI版でない場合は、こちらの設定を追加する。
+" （マウスで選択するたびにコピーされて煩わしいのでこの機能は使用しない．
+" set clipboard+=autoselect
+
+"y で自動的にクリップボードへ
+set clipboard+=unnamed
+
+" vimでペーストするときインデントさせない
+"（注意 このコマンドはキーマッピングを完全に無効化するので基本的に使わない.）
+" webサイトなどからコピーして，normal mode で一度Pasteを使ってペースト，
+" その後 p を押せば問題なくコピーできる．
+" set paste
+
+"######################################################################
+" 動作環境との統合関連の設定
+"######################################################################
+
+" vimshell の文字化け関連 言語　日本語
+let g:vimshell_interactive_encodings = {
+      \'/':'utf-8-mac',
+      \}
+let g:vimshell_user_prompt = 'iconv(fnamemodify(getcwd(),":~"),"utf-8-mac","char")'
+
+" 
+" OSのクリップボードをレジスタ指定無しで Yank, Put 出来るようにする
+" set clipboard=unnamed,unnamedplus
+
+"バックスペースが効かない不具合を解消
+set backspace=indent,eol,start
+
+"007 のやつ　８進数を10進数へ"
+set nrformats= 
+
+" マウスの入力を受け付ける
+set mouse=a
+set ttymouse=xterm2
+
+" インサートモードから抜けると自動的にIMEをオフにする
+" （日本語入力の時に結構良いらしいけどこれを設定するとエラーがでる）
+" set iminsert=2
+" （以下は:help iminsert に書いてあったけどよくわからん）
+" inoremap <ESC> <ESC>:set iminsert=0<CR>
+

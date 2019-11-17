@@ -1,0 +1,137 @@
+"==============================
+" file 操作
+"==============================
+
+" vimgrep のショートカット
+nnoremap M :cprevious<CR>   " 前へ
+nnoremap m :cnext<CR>       " 次へ
+nnoremap <Leader>q :<C-u>cfirst<CR> " 最初へ
+nnoremap <Leader>Q :<C-u>clast<CR>  " 最後へ
+
+" バッファリストのショートカット
+nnoremap <C-p> :bprevious<CR>   " 前へ
+nnoremap <C-n> :bnext<CR>       " 次へ
+nnoremap <Leader>b :<C-u>bfirst<CR> " 最初へ
+nnoremap <Leader>B :<C-u>blast<CR>  " 最後へ
+
+" ctag jump タグジャンプのショートカット 
+" (!ctags -Rでタグファイルを作成すること)
+nnoremap T :tprevious<CR>   " 前へ
+nnoremap t :tnext<CR>       " 次へ
+nnoremap <Leader>t :<C-u>tfirst<CR> " 最初へ
+nnoremap <Leader>T :<C-u>tlast<CR>  " 最後へ
+
+nnoremap <Space>] g<C-]>1<CR>
+nnoremap <Space>j :<C-u>tjump<Space>
+
+nnoremap <Space>a :<C-u>args
+nmap <Space>b :ls<CR>:buf
+
+"
+" open file (use <Leader>)
+"
+
+let mapleader=","
+" ,v でvimrcを開く
+nmap <Leader>v :edit $MYVIMRC<CR>
+nmap <Leader>k :edit $MYVIMRCSUB/.vimrc_keymap<CR>
+nmap <Leader>z :edit ~/.zshrc<CR>
+nmap <Leader>p :edit $PYTHON_PROGRAM/ParallelProcess.py<CR>
+nmap <Leader>c :edit $PYTHON_PROGRAM/func/my_cython_func.pyx<CR>
+nmap <Leader>s :edit $PYTHON_PROGRAM/my_setting.py<CR>
+
+"==============================
+" movement key
+"==============================
+
+noremap j gj
+noremap k gk
+noremap gj j
+noremap gk k
+
+" 入力モードで矢印キーでカーソル移動
+
+inoremap <C-B> <Left>
+inoremap <C-F> <Right>
+
+"###大きくジャンプするやつ
+noremap <S-h>   ^
+noremap <S-l>   $
+"上下の空白行を移動
+noremap <S-j>   }
+noremap <S-k>   {
+"かっこをジャンプ かっこだから頭文字でk
+noremap <Space>k  %
+
+
+"行末までのヤンク Y
+nnoremap Y y$
+"数字のインクリメント、デクリメント
+nnoremap + <C-a>
+nnoremap - <C-x>
+
+"==============================
+"コマンドモード(use <Space>)
+"==============================
+
+nnoremap <Space>w  :<C-u>w<CR>
+nnoremap <Space>q  :<C-u>q<CR>
+nnoremap <Leader>q  :<C-u>qa<CR>
+
+
+"c言語コンパイル
+":make
+nnoremap <Leader>m :<C-u>w<CR>:<C-u>make<CR>:<C-u>cope<CR><CR>
+nnoremap <Space>m :<C-u>w<CR>:<C-u>QuickRun make<CR>:<C-u>cope<CR><CR>
+" Quick fix list を消す
+nnoremap <Space>f :<C-u>ccl<CR>
+
+":shell
+"ちなみにshellを抜ける時はexit か <C-d>
+nnoremap <Space>s :<C-U>shell<CR>
+"ターミナルに移動したり、vimに戻ったりする ( fg<CR> : go back to vim )
+nnoremap <Space>z <C-z>
+
+"==でインデント整理
+nnoremap == gg=G''
+
+" インサートモードの時に C-j でノーマルモードに戻る
+"imap <C-l> <ESC> 
+
+" 日本語入力がオンのままでも使えるコマンド(Enterキーは必要)
+nnoremap あ a
+nnoremap い i
+nnoremap う u
+nnoremap お o
+nnoremap っd dd
+nnoremap っy yy
+
+" jjでエスケープ
+inoremap <silent> jj <ESC>
+"inoremap <silent> jj <C-[>
+
+" 日本語入力で”っj”と入力してもEnterキーで確定させればインサートモードを抜ける
+inoremap <silent> っj <ESC>
+
+" aaでかっこを抜ける
+inoremap <silent> <C-e> <ESC>A
+inoremap <silent> <C-a> <ESC>I
+
+
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+
+
+" //で\
+inoremap <silent> kk \
+
+
+
+"==============================
+" 検索
+"==============================
+"
+" http://deris.hatenablog.jp/entry/2013/05/15/024932
+"コマンドモード(use <Space>) very magic を有効にする
+nnoremap /  /\v
+
