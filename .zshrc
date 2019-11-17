@@ -1,8 +1,8 @@
 # neovim setting
 # export HOME="$HOME/mot"
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_DATA_HOME="$HOME/.local/share"
+# export XDG_CONFIG_HOME="$HOME/.config"
+# export XDG_CACHE_HOME="$HOME/.cache"
+# export XDG_DATA_HOME="$HOME/.local/share"
  
 # Path to your oh-my-zsh installation.
 export MYVIMRCSUB=$HOME/vim_setting/
