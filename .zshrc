@@ -5,9 +5,9 @@
 # export XDG_DATA_HOME="$HOME/.local/share"
  
 # Path to your oh-my-zsh installation.
-export MYVIMRCSUB=$HOME/vim_setting/
+export MYVIMRCSUB=$MOT/vim_setting/
 #export ZSH=$HOME/.oh-my-zsh
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$MOT/.oh-my-zsh
 # Path to python-program
 ZSH_THEME="sporty_256" 
 
@@ -18,8 +18,8 @@ plugins=(git)
 #
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.zsh/peco-scripts/peco-select-history.zsh
-source $HOME/zsh-vimode-visual/zsh-vimode-visual.zsh  # visual mode command の説明あり
+source $MOT/.zsh/peco-scripts/peco-select-history.zsh
+source $MOT/zsh-vimode-visual/zsh-vimode-visual.zsh  # visual mode command の説明あり
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
@@ -30,7 +30,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 bindkey '^r' peco-select-history
 #履歴ファイルの保存先
-export HISTFILE=$HOME/.zsh_history
+export HISTFILE=$MOT/.zsh_history
 ## メモリに保存される履歴の件数
 export HISTSIZE=10000
 ## 履歴ファイルに保存される履歴の件数
