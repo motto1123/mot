@@ -6931,36 +6931,52 @@ $dropq
 |4,77,64,12,0,"~/.vimrc_sub/.vimrc_Neobundle"
 'V  4  0  ~/.vimrc
 |4,86,4,0,0,"~/.vimrc"
-'0  8  36  ~/.git/config
-|4,48,8,36,1573919947,"~/.git/config"
-'1  2  23  ~/.zshrc
-|4,49,2,23,1573919873,"~/.zshrc"
-'2  1  1  ~/.ssh/id_rsa.pub
-|4,50,1,1,1573919107,"~/.ssh/id_rsa.pub"
-'3  1  80  ~/.ssh/id_rsa.pub
-|4,51,1,80,1573916650,"~/.ssh/id_rsa.pub"
-'4  18  3  ~/.gitignore
-|4,52,18,3,1573916010,"~/.gitignore"
-'5  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,53,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
-'6  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/[quickrun output]
-|4,54,1,0,1573846490,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/[quickrun output]"
+'0  18  0  ~/.gitignore
+|4,48,18,0,1573977542,"~/.gitignore"
+'1  8  36  ~/.git/config
+|4,49,8,36,1573919947,"~/.git/config"
+'2  2  23  ~/.zshrc
+|4,50,2,23,1573919873,"~/.zshrc"
+'3  1  1  ~/.ssh/id_rsa.pub
+|4,51,1,1,1573919107,"~/.ssh/id_rsa.pub"
+'4  1  80  ~/.ssh/id_rsa.pub
+|4,52,1,80,1573916650,"~/.ssh/id_rsa.pub"
+'5  18  3  ~/.gitignore
+|4,53,18,3,1573916010,"~/.gitignore"
+'6  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
+|4,54,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
 '7  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/[quickrun output]
 |4,55,1,0,1573846490,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/[quickrun output]"
-'8  89  32  ~/vim_setting/.vimrc_Neobundle
-|4,56,89,32,1573846424,"~/vim_setting/.vimrc_Neobundle"
-'9  11  49  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/SA_SQA_test.py
-|4,57,11,49,1573844112,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/SA_SQA_test.py"
+'8  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/[quickrun output]
+|4,56,1,0,1573846490,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/[quickrun output]"
+'9  89  32  ~/vim_setting/.vimrc_Neobundle
+|4,57,89,32,1573846424,"~/vim_setting/.vimrc_Neobundle"
 
 # Jumplist (newest first):
+-'  18  0  ~/.gitignore
+|4,39,18,0,1573977542,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1573977537,"~/.gitignore"
 -'  8  36  ~/.git/config
 |4,39,8,36,1573919947,"~/.git/config"
+-'  8  36  ~/.git/config
+|4,39,8,36,1573919947,"~/.git/config"
+-'  1  0  ~/.git/config
+|4,39,1,0,1573919932,"~/.git/config"
 -'  1  0  ~/.git/config
 |4,39,1,0,1573919932,"~/.git/config"
 -'  2  23  ~/.zshrc
 |4,39,2,23,1573919873,"~/.zshrc"
 -'  2  23  ~/.zshrc
 |4,39,2,23,1573919873,"~/.zshrc"
+-'  2  23  ~/.zshrc
+|4,39,2,23,1573919873,"~/.zshrc"
+-'  2  23  ~/.zshrc
+|4,39,2,23,1573919873,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1573919472,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1573919472,"~/.zshrc"
 -'  1  0  ~/.zshrc
 |4,39,1,0,1573919472,"~/.zshrc"
 -'  1  0  ~/.zshrc
@@ -6973,6 +6989,22 @@ $dropq
 |4,39,1,1,1573919107,"~/.ssh/id_rsa.pub"
 -'  1  1  ~/.ssh/id_rsa.pub
 |4,39,1,1,1573919107,"~/.ssh/id_rsa.pub"
+-'  1  1  ~/.ssh/id_rsa.pub
+|4,39,1,1,1573919107,"~/.ssh/id_rsa.pub"
+-'  1  1  ~/.ssh/id_rsa.pub
+|4,39,1,1,1573919107,"~/.ssh/id_rsa.pub"
+-'  1  1  ~/.ssh/id_rsa.pub
+|4,39,1,1,1573919107,"~/.ssh/id_rsa.pub"
+-'  1  1  ~/.ssh/id_rsa.pub
+|4,39,1,1,1573919107,"~/.ssh/id_rsa.pub"
+-'  1  80  ~/.ssh/id_rsa.pub
+|4,39,1,80,1573916650,"~/.ssh/id_rsa.pub"
+-'  1  80  ~/.ssh/id_rsa.pub
+|4,39,1,80,1573916650,"~/.ssh/id_rsa.pub"
+-'  1  80  ~/.ssh/id_rsa.pub
+|4,39,1,80,1573916650,"~/.ssh/id_rsa.pub"
+-'  1  80  ~/.ssh/id_rsa.pub
+|4,39,1,80,1573916650,"~/.ssh/id_rsa.pub"
 -'  1  80  ~/.ssh/id_rsa.pub
 |4,39,1,80,1573916650,"~/.ssh/id_rsa.pub"
 -'  1  80  ~/.ssh/id_rsa.pub
@@ -7045,6 +7077,10 @@ $dropq
 |4,39,16,7,1573913473,"~/.gitignore"
 -'  16  7  ~/.gitignore
 |4,39,16,7,1573913473,"~/.gitignore"
+-'  16  7  ~/.gitignore
+|4,39,16,7,1573913473,"~/.gitignore"
+-'  14  6  ~/.gitignore
+|4,39,14,6,1573913428,"~/.gitignore"
 -'  14  6  ~/.gitignore
 |4,39,14,6,1573913428,"~/.gitignore"
 -'  14  6  ~/.gitignore
@@ -7109,44 +7145,8 @@ $dropq
 |4,39,2,0,1573912809,"~/.gitignore"
 -'  2  0  ~/.gitignore
 |4,39,2,0,1573912809,"~/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
--'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
-|4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
+-'  2  0  ~/.gitignore
+|4,39,2,0,1573912809,"~/.gitignore"
 -'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
 |4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
 -'  1  0  ~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore
@@ -7155,6 +7155,35 @@ $dropq
 |4,39,1,0,1573912801,"~/notebook/jupyter/jij_project/5G-optimize-notebook-master/.gitignore"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1573977541	0
+	"	18	0
+	^	12	0
+	.	18	3
+	+	2	0
+	+	16	0
+	+	3	4
+	+	16	0
+	+	3	0
+	+	5	1
+	+	16	0
+	+	5	0
+	+	6	9
+	+	7	11
+	+	15	7
+	+	16	8
+	+	16	14
+	+	8	11
+	+	9	0
+	+	14	5
+	+	16	0
+	+	5	0
+	+	16	0
+	+	10	0
+	+	1	5
+	+	16	0
+	+	18	3
 
 > ~/.git/config
 	*	1573919946	0
@@ -7186,35 +7215,6 @@ $dropq
 	^	1	0
 	.	1	0
 	+	1	0
-
-> ~/.gitignore
-	*	1573916009	0
-	"	18	3
-	^	18	4
-	.	18	3
-	+	2	0
-	+	16	0
-	+	3	4
-	+	16	0
-	+	3	0
-	+	5	1
-	+	16	0
-	+	5	0
-	+	6	9
-	+	7	11
-	+	15	7
-	+	16	8
-	+	16	14
-	+	8	11
-	+	9	0
-	+	14	5
-	+	16	0
-	+	5	0
-	+	16	0
-	+	10	0
-	+	1	5
-	+	16	0
-	+	18	3
 
 > ~/.gitconfig
 	*	1573914158	0
