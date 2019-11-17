@@ -1,6 +1,7 @@
 # file
 *.swp
 *.swo
+.vim/bundle
 
 # zsh
 .zcompdump
